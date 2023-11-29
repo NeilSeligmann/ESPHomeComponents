@@ -1,8 +1,13 @@
-#include "esphome.h"
+#pragma once
+
+// #include "esphome.h"
+#include "esphome/core/component.h"
+#include "esphome/core/hal.h"
+#include "esphome/components/output/float_output.h"
 
 namespace esphome
 {
-	namespace uart
+	namespace uart_read_line_sensor
 	{
 		class UartReadLineSensor : public Component, public UARTDevice, public TextSensor
 		{
